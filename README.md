@@ -66,6 +66,34 @@ The project demonstrates experience with:
 - Responsive UI development
 - Git version control
 
+  ## 📸 Application Screenshots
+
+  ### home
+![Samuelcar](docs/screenshots/home.png)
+
+### Login
+
+![Samuelcar](docs/screenshots/login.png)
+
+### Dashboard
+
+![Samuelcar](docs/screenshots/dashboard.png)
+
+### Competition
+![Samuelcar](docs/screenshots/Competition.png)
+
+
+### Checkout
+![Samuelcar](docs/screenshots/Checkout.png)
+
+### addproducts
+![Samuelcar](docs/screenshots/addproducts.png)
+
+
+### Shop
+![Samuelcar](docs/screenshots/Shop.png)
+
+
 ## Project Structure
 
 The application follows Laravel's standard MVC architecture:
