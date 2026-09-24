@@ -104,3 +104,19 @@ The application follows Laravel's standard MVC architecture:
 - `database/` - Migrations, seeders and factories
 - `public/` - Public assets
 - `storage/` - Application-generated files
+
+## Deployment
+
+The application is currently maintained as a development and portfolio project.
+
+### Current Environment
+
+- Local Laravel development environment
+- GitHub source-code repository
+- Database configured for local development
+
+### Source Code
+
+The complete source code is available in this repository.
+
+> Live demo deployment is planned as a future improvement.
