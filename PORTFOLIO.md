@@ -99,4 +99,4 @@ Planned improvements include:
 
 ### Git
 
-![Samuelcar](docs/screenshots/Git.png)
+![samuelcar](docs/screenshots/Git.png)
