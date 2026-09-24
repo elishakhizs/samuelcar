@@ -226,3 +226,19 @@ Potential future improvements include:
 - Customer account management
 - Automated stock management
 - Production deployment and monitoring
+
+## Version Control Workflow
+
+Git was used throughout the development of the Samuel Car application to manage source code and track development changes.
+
+The development workflow included:
+
+1. Developing and testing features locally
+2. Reviewing changes using Git
+3. Creating focused commits
+4. Maintaining project documentation
+5. Pushing changes to GitHub
+6. Using GitHub as the central source-code repository
+
+The repository provides a history of development changes and documentation updates.
+
