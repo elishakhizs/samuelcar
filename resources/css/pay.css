@@ -1,0 +1,128 @@
+html { scroll-behavior: smooth; }
+
+.Payalign{
+    justify-content: left;
+}
+
+.payroll{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 60px;
+}
+
+.competePay{
+    justify-content:center;
+    text-align: center;
+    width: 35%;
+    background: #fff;
+    
+    border-radius: 10px 0 0 10px;
+}
+
+.secondHalf{
+    margin-top: 55px;
+    width: 50%;
+    
+}
+
+.compPay{
+    justify-content:center;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    background: linear-gradient( to right,black,grey,black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/*this section of style is for the discriptions to display rules and so on via a button*/
+.description{
+    justify-content: center;
+    padding:10px 0 0 100px;
+}
+.colorless-button {
+    background: none;
+    border:none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    width:80%;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: left;
+}
+
+#paragraph {
+    margin-top: 10px;
+    display: none;
+    width:80%;
+}
+
+#paragraph2 {
+    margin-top: 10px;
+    display: none;
+    width:80%;
+}
+
+#paragraph3 {
+    margin-top: 10px;
+    display: none;
+    width:80%;
+}
+
+.colorless-button:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+
+    /* Stack main payroll section */
+    .payroll {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    /* Make both sections full width */
+    .competePay,
+    .secondHalf {
+        width: 100%;
+    }
+
+    .competePay {
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .secondHalf {
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    /* Reduce large heading size */
+    .compPay {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    /* Fix description padding */
+    .description {
+        padding: 0 20px;
+    }
+
+    /* Make buttons fit nicely */
+    .colorless-button {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* Paragraphs full width */
+    #paragraph,
+    #paragraph2,
+    #paragraph3 {
+        width: 100%;
+    }
+
+}

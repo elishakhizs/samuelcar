@@ -1,0 +1,168 @@
+html { scroll-behavior: smooth; }
+
+.how-it-works{
+    background: #0f0f0f;
+    color: #fff;
+    padding: 100px 20px;   /* page padding */
+    text-align: center;
+}
+
+.flow-container {
+    max-width: 1200px;    /* limits width */
+    margin: 0 auto;       /* centers on page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    background: #1c1c1c;
+    padding: 35px 30px;     /* 👈 internal spacing */
+    width: 260px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* PROGRESS LINE */
+.flow-line {
+    position: relative;
+    width: 70px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.flow-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff0000, #ff6a00);
+    transition: width 1.2s ease;
+}
+
+/* When active */
+.flow-line.active::after {
+    width: 100%;
+}
+
+/* STEP CARD ANIMATION */
+.animate-step {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-step.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slight emphasis on hover */
+.flow-step:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.brief{
+    padding:150px;
+    font-size:20px;
+    font-display: fallback;
+    text-align: center;
+    text-spacing-trim: space-all;
+    line-height: 1.6;
+}
+
+.pay{
+    background: #535252;
+    color: #fff;
+    padding: 80px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.steps{
+    justify-content: center;
+    text-align: left;
+    margin-left: 660px;
+}
+
+/* ADS CREATED FOR THE SHOP */
+
+.ads {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.slide img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .flow-line {
+        width: 4px;
+        height: 45px;
+    }
+
+    .flow-line::after {
+        width: 100%;
+        height: 0%;
+        transition: height 1.2s ease;
+    }
+
+    .flow-line.active::after {
+        height: 100%;
+    }
+
+    .flow-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .steps{
+    justify-content: center;
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 15%;
+    }
+
+    .brief {
+        padding: 40px 20px;   /* smaller spacing */
+        font-size: 16px;      /* better mobile size */
+        line-height: 1.6;
+    }
+
+}
+
