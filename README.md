@@ -73,7 +73,7 @@ The project demonstrates experience with:
 
 ### Login
 
-![Samuelcar](docs/screenshots/login.png)
+![Samuelcar](docs/screenshots/Login.png)
 
 ### Dashboard
 
